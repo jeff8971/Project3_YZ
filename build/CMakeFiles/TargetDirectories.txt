@@ -1,0 +1,5 @@
+/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/threshold_process.dir
+/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/clean_process.dir
+/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/segment_process.dir
+/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/edit_cache.dir
+/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/rebuild_cache.dir

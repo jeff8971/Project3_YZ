@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/clean_process.cpp.dir/src/threshold_process.cpp.o CMakeFiles/clean_process.cpp.dir/src/thresholding.cpp.o -o /Users/jeff/Desktop/Project3_YZ_2/bin/clean_process.cpp 

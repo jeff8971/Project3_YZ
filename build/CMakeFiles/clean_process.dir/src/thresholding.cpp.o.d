@@ -1,6 +1,6 @@
 CMakeFiles/clean_process.dir/src/thresholding.cpp.o: \
-  /Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp \
-  /Users/jeff/Desktop/Project3_YZ_2/include/thresholding.h \
+  /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp \
+  /Users/jeff/Desktop/Project3_YZ/include/thresholding.h \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core/mat.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core/matx.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core/cvdef.h \

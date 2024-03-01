@@ -1,5 +1,5 @@
 CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.o: \
-  /Users/jeff/Desktop/Project3_YZ_2/src/morphological_filtering.cpp \
+  /Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core.hpp \

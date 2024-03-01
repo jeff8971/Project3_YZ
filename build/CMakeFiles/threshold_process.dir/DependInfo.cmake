@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp" "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o" "gcc" "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o.d"
-  "/Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp" "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o" "gcc" "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o.d"
+  "/Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp" "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o" "gcc" "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o.d"
+  "/Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp" "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o" "gcc" "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

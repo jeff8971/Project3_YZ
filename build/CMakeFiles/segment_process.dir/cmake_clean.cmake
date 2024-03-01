@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/jeff/Desktop/Project3_YZ_2/bin/segment_process"
-  "/Users/jeff/Desktop/Project3_YZ_2/bin/segment_process.pdb"
+  "/Users/jeff/Desktop/Project3_YZ/bin/segment_process"
+  "/Users/jeff/Desktop/Project3_YZ/bin/segment_process.pdb"
   "CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o"
   "CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o.d"
   "CMakeFiles/segment_process.dir/src/segment_process.cpp.o"

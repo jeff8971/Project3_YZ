@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process"
-  "/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process.pdb"
+  "/Users/jeff/Desktop/Project3_YZ/bin/threshold_process"
+  "/Users/jeff/Desktop/Project3_YZ/bin/threshold_process.pdb"
   "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o"
   "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o.d"
   "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o"

@@ -1,5 +1,5 @@
 CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: \
-  /Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp \
+  /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core.hpp \
@@ -914,4 +914,4 @@ CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/jeff/Desktop/Project3_YZ_2/include/thresholding.h
+  /Users/jeff/Desktop/Project3_YZ/include/thresholding.h

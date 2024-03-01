@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jeff/Desktop/Project3_YZ_2
+CMAKE_SOURCE_DIR = /Users/jeff/Desktop/Project3_YZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jeff/Desktop/Project3_YZ_2/build
+CMAKE_BINARY_DIR = /Users/jeff/Desktop/Project3_YZ/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/segment_process.dir/clean
 CMakeFiles/threshold_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=10,11,12 "Built target threshold_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=10,11,12 "Built target threshold_process"
 .PHONY : CMakeFiles/threshold_process.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/threshold_process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/threshold_process.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 0
 .PHONY : CMakeFiles/threshold_process.dir/rule
 
 # Convenience name for target.
@@ -111,14 +111,14 @@ CMakeFiles/threshold_process.dir/clean:
 CMakeFiles/clean_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=1,2,3,4 "Built target clean_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=1,2,3,4 "Built target clean_process"
 .PHONY : CMakeFiles/clean_process.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clean_process.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_process.dir/rule
 
 # Convenience name for target.
@@ -137,14 +137,14 @@ CMakeFiles/clean_process.dir/clean:
 CMakeFiles/segment_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=5,6,7,8,9 "Built target segment_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=5,6,7,8,9 "Built target segment_process"
 .PHONY : CMakeFiles/segment_process.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/segment_process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/segment_process.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 0
 .PHONY : CMakeFiles/segment_process.dir/rule
 
 # Convenience name for target.

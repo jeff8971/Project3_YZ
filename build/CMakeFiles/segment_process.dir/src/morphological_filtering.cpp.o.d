@@ -1,5 +1,5 @@
-CMakeFiles/clean_process.dir/src/clean_process.cpp.o: \
-  /Users/jeff/Desktop/Project3_YZ/src/clean_process.cpp \
+CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o: \
+  /Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/core.hpp \
@@ -913,6 +913,4 @@ CMakeFiles/clean_process.dir/src/clean_process.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/stitching/detail/blenders.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/jeff/Desktop/Project3_YZ/include/thresholding.h \
-  /Users/jeff/Desktop/Project3_YZ/include/morphological_filtering.h
+  /usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2/video/background_segm.hpp

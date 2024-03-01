@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jeff/Desktop/Project3_YZ_2
+CMAKE_SOURCE_DIR = /Users/jeff/Desktop/Project3_YZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jeff/Desktop/Project3_YZ_2/build
+CMAKE_BINARY_DIR = /Users/jeff/Desktop/Project3_YZ/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/threshold_process.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/threshold_process.dir/progress.make
 include CMakeFiles/threshold_process.dir/flags.make
 
 CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: CMakeFiles/threshold_process.dir/flags.make
-CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: /Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp
+CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp
 CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o: CMakeFiles/threshold_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o -MF CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o.d -o CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o -c /Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o -MF CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o.d -o CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp
 
 CMakeFiles/threshold_process.dir/src/threshold_process.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/threshold_process.dir/src/threshold_process.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp > CMakeFiles/threshold_process.dir/src/threshold_process.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp > CMakeFiles/threshold_process.dir/src/threshold_process.cpp.i
 
 CMakeFiles/threshold_process.dir/src/threshold_process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/threshold_process.dir/src/threshold_process.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ_2/src/threshold_process.cpp -o CMakeFiles/threshold_process.dir/src/threshold_process.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp -o CMakeFiles/threshold_process.dir/src/threshold_process.cpp.s
 
 CMakeFiles/threshold_process.dir/src/thresholding.cpp.o: CMakeFiles/threshold_process.dir/flags.make
-CMakeFiles/threshold_process.dir/src/thresholding.cpp.o: /Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp
+CMakeFiles/threshold_process.dir/src/thresholding.cpp.o: /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp
 CMakeFiles/threshold_process.dir/src/thresholding.cpp.o: CMakeFiles/threshold_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/threshold_process.dir/src/thresholding.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/threshold_process.dir/src/thresholding.cpp.o -MF CMakeFiles/threshold_process.dir/src/thresholding.cpp.o.d -o CMakeFiles/threshold_process.dir/src/thresholding.cpp.o -c /Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/threshold_process.dir/src/thresholding.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/threshold_process.dir/src/thresholding.cpp.o -MF CMakeFiles/threshold_process.dir/src/thresholding.cpp.o.d -o CMakeFiles/threshold_process.dir/src/thresholding.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp
 
 CMakeFiles/threshold_process.dir/src/thresholding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/threshold_process.dir/src/thresholding.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp > CMakeFiles/threshold_process.dir/src/thresholding.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp > CMakeFiles/threshold_process.dir/src/thresholding.cpp.i
 
 CMakeFiles/threshold_process.dir/src/thresholding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/threshold_process.dir/src/thresholding.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ_2/src/thresholding.cpp -o CMakeFiles/threshold_process.dir/src/thresholding.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp -o CMakeFiles/threshold_process.dir/src/thresholding.cpp.s
 
 # Object files for target threshold_process
 threshold_process_OBJECTS = \
@@ -105,70 +105,70 @@ threshold_process_OBJECTS = \
 # External object files for target threshold_process
 threshold_process_EXTERNAL_OBJECTS =
 
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: CMakeFiles/threshold_process.dir/src/thresholding.cpp.o
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: CMakeFiles/threshold_process.dir/build.make
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_gapi.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_stitching.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_alphamat.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_aruco.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_bgsegm.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_bioinspired.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_ccalib.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_dnn_objdetect.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_dnn_superres.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_dpm.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_face.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_freetype.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_fuzzy.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_hfs.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_img_hash.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_intensity_transform.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_line_descriptor.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_mcc.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_quality.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_rapid.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_reg.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_rgbd.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_saliency.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_sfm.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_stereo.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_structured_light.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_superres.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_surface_matching.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_tracking.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_videostab.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_viz.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_wechat_qrcode.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_xfeatures2d.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_xobjdetect.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_xphoto.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_shape.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_highgui.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_datasets.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_plot.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_text.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_ml.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_phase_unwrapping.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_optflow.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_ximgproc.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_video.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_videoio.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_imgcodecs.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_objdetect.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_calib3d.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_dnn.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_features2d.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_flann.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_photo.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_imgproc.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: /usr/local/lib/libopencv_core.4.9.0.dylib
-/Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process: CMakeFiles/threshold_process.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process"
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: CMakeFiles/threshold_process.dir/src/thresholding.cpp.o
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: CMakeFiles/threshold_process.dir/build.make
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_gapi.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_stitching.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_alphamat.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_aruco.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_bgsegm.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_bioinspired.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_ccalib.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_dnn_objdetect.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_dnn_superres.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_dpm.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_face.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_freetype.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_fuzzy.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_hfs.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_img_hash.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_intensity_transform.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_line_descriptor.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_mcc.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_quality.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_rapid.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_reg.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_rgbd.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_saliency.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_sfm.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_stereo.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_structured_light.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_superres.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_surface_matching.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_tracking.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_videostab.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_viz.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_wechat_qrcode.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_xfeatures2d.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_xobjdetect.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_xphoto.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_shape.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_highgui.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_datasets.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_plot.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_text.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_ml.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_phase_unwrapping.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_optflow.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_ximgproc.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_video.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_videoio.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_imgcodecs.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_objdetect.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_calib3d.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_dnn.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_features2d.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_flann.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_photo.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_imgproc.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: /usr/local/lib/libopencv_core.4.9.0.dylib
+/Users/jeff/Desktop/Project3_YZ/bin/threshold_process: CMakeFiles/threshold_process.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /Users/jeff/Desktop/Project3_YZ/bin/threshold_process"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threshold_process.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/threshold_process.dir/build: /Users/jeff/Desktop/Project3_YZ_2/bin/threshold_process
+CMakeFiles/threshold_process.dir/build: /Users/jeff/Desktop/Project3_YZ/bin/threshold_process
 .PHONY : CMakeFiles/threshold_process.dir/build
 
 CMakeFiles/threshold_process.dir/clean:
@@ -176,6 +176,6 @@ CMakeFiles/threshold_process.dir/clean:
 .PHONY : CMakeFiles/threshold_process.dir/clean
 
 CMakeFiles/threshold_process.dir/depend:
-	cd /Users/jeff/Desktop/Project3_YZ_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jeff/Desktop/Project3_YZ_2 /Users/jeff/Desktop/Project3_YZ_2 /Users/jeff/Desktop/Project3_YZ_2/build /Users/jeff/Desktop/Project3_YZ_2/build /Users/jeff/Desktop/Project3_YZ_2/build/CMakeFiles/threshold_process.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/jeff/Desktop/Project3_YZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jeff/Desktop/Project3_YZ /Users/jeff/Desktop/Project3_YZ /Users/jeff/Desktop/Project3_YZ/build /Users/jeff/Desktop/Project3_YZ/build /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/threshold_process.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/threshold_process.dir/depend
 

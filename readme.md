@@ -14,6 +14,7 @@ Project3_YZ is developed as part of the CS5330 Computer Vision course, focusing 
 - **Compiler**: C++ Compiler supporting C++11 standard
 - **System Configuration**: Compatible with various operating systems, including macOS, Linux, and Windows.
 - **Dependencies**: Requires OpenCV for image processing and feature extraction functionalities.
+- **Camera**: External camera or video input device for real-time video input. This project using Apple iPhone 15 as the camera input. Before running the project, please make sure the camera is connected and working properly. Select the camera index in the code accordingly.
 
 ## Project Structure
 - `src/`: Source files implementing the core functionality of the project.

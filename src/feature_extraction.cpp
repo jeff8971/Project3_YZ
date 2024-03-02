@@ -1,84 +1,52 @@
-
-
-
-#include <opencv2/opencv.hpp>
 #include "feature_extraction.h"
-#include <iostream> 
-#include <fstream>
+#include <opencv2/imgproc.hpp>
+#include <vector>
+#include <iostream>
 
 
-// Function to compute the contour of a specific region in an image based on label IDs
-std::vector<cv::Point> computeRegionContour(const cv::Mat& labels, int regionID) {
-    std::vector<std::vector<cv::Point>> contours;
-    cv::Mat regionMask;
-    cv::compare(labels, regionID, regionMask, cv::CMP_EQ);
 
-    cv::findContours(regionMask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+RegionInfo computeFeatures(cv::Mat &src, const cv::Mat &labels, int label, const cv::Point2d &centroid, const cv::Vec3b &color) {
+    RegionInfo info;
+    info.centroid = centroid;
+    info.color = color;
 
-    if (contours.size() > 0) {
-        return contours[0];
-    }
-    else {
-        return {};
-    }
-}
-
-// Function to compute various features for a specific region in an image, including oriented bounding box, 
-// aspect ratio, percent filled, and image moments
-RegionFeatures computeRegionFeatures(const cv::Mat& labels, int regionID, const cv::Mat& regionStats) {
-    RegionFeatures features;
-    std::vector<cv::Point> points;
-
-    // Extract all points that belong to the region
-    for (int i = 0; i < labels.rows; ++i) {
-        for (int j = 0; j < labels.cols; ++j) {
-            if (labels.at<int>(i, j) == regionID) {
-                points.push_back(cv::Point(j, i));
+    // Create mask for the specified label
+    cv::Mat mask = cv::Mat::zeros(labels.size(), CV_8U);
+    for (int y = 0; y < labels.rows; ++y) {
+        for (int x = 0; x < labels.cols; ++x) {
+            if (labels.at<int>(y, x) == label) {
+                mask.at<uchar>(y, x) = 255;
             }
         }
     }
 
-    if (points.empty()) {
-        std::cerr << "Error: No points found in region " << regionID << std::endl;
-        return features; 
-    }
-
-    // Calculate the oriented bounding box
-    cv::RotatedRect rect = cv::minAreaRect(points);
-    features.orientedBoundingBox = rect;
+    // Calculate moments of the mask
+    cv::Moments m = cv::moments(mask, true);
+    cv::HuMoments(m, info.huMoments); // Calculate Hu Moments
 
     // Calculate percent filled and aspect ratio
-    int area = regionStats.at<int>(regionID, cv::CC_STAT_AREA);
-    int bboxArea = (int)rect.size.width * (int)rect.size.height;
-    features.percentFilled = static_cast<float>(area) / static_cast<float>(bboxArea);
-    features.bboxAspectRatio = rect.size.width / rect.size.height;
+    std::vector<cv::Point> points;
+    cv::findNonZero(mask, points);
+    cv::RotatedRect rotRect = cv::minAreaRect(points);
+    double area = cv::contourArea(points);
+    double bboxArea = rotRect.size.width * rotRect.size.height;
+    info.percentFilled = static_cast<float>(area / bboxArea);
+    info.bboxAspectRatio = static_cast<float>(rotRect.size.width / rotRect.size.height);
 
-    // Calculate image moments
-    cv::Moments m = cv::moments(points, true);
-    double hu[7];
-    cv::HuMoments(m, hu);
-    // Copy the hu moments into the features structure
-    for (int i = 0; i < 7; ++i) {
-        features.huMoments[i] = hu[i];
+    // Draw rectangle around the region
+    cv::Point2f rectPoints[4];
+    rotRect.points(rectPoints);
+    for (int j = 0; j < 4; j++) {
+        cv::line(src, rectPoints[j], rectPoints[(j+1)%4], cv::Scalar(color), 2);
     }
 
-    features.contour = points;
+    // Draw the centroid
+    cv::circle(src, centroid, 5, cv::Scalar(color), -1);
 
-    return features;
-}
+    // Optionally, draw a line indicating the direction of the major axis
+    double angle = atan2(2 * m.mu11, m.mu20 - m.mu02) / 2;
+    cv::Point2f endpoint(centroid.x + cos(angle) * 100, centroid.y - sin(angle) * 100); // Adjusted for correct orientation
+    cv::line(src, centroid, endpoint, cv::Scalar(color), 2);
 
-
-void saveFeatureVector(const RegionFeatures& features, const std::string& label, const std::string& filename) {
-    std::ofstream file(filename, std::ios::app);
-    if (!file) {
-        std::cerr << "Error opening file: " << filename << std::endl;
-        return;
-    }
-    file << label << ",";
-    for (const auto& moment : features.huMoments) {
-        file << moment << ",";
-    }
-    file << features.percentFilled << ",";
-    file << features.bboxAspectRatio << std::endl;
-    file.close();
+    return info;
 }

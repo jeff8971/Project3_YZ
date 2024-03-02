@@ -41,3 +41,12 @@ add_executable(segment_process ${CMAKE_SOURCE_DIR} ./src/segment_process.cpp ./s
 target_link_libraries(segment_process PRIVATE ${OpenCV_LIBS})
 # Ensure the OpenCV include directories are available to the target
 target_include_directories(segment_process PRIVATE ${OpenCV_INCLUDE_DIRS})
+
+# Task 4: Compute features for each major region
+# Add the executable that uses clean_process.cpp and morphological_filtering.cpp
+add_executable(feature_process ${CMAKE_SOURCE_DIR} ./src/feature_process.cpp ./src/segment.cpp ./src/thresholding.cpp  ./src/morphological_filtering.cpp 
+./src/feature_extraction.cpp)
+# Link with OpenCV libraries
+target_link_libraries(feature_process PRIVATE ${OpenCV_LIBS})
+# Ensure the OpenCV include directories are available to the target
+target_include_directories(feature_process PRIVATE ${OpenCV_INCLUDE_DIRS})

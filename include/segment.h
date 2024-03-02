@@ -18,9 +18,13 @@
 /**
  * @brief Struct to store information about a segmented region.
  */
+// Structure to hold region features
 struct RegionInfo {
-    cv::Point2d centroid; ///< Centroid of the region.
-    cv::Vec3b color; ///< Color of the region.
+    cv::Point2d centroid; // Centroid of the region
+    cv::Vec3b color; // Color of the region
+    float percentFilled; // Percentage of the region filled
+    float bboxAspectRatio; // Aspect ratio of the bounding box
+    double huMoments[7]; // Hu moments for shape analysis
 };
 
 /**

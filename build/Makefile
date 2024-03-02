@@ -155,6 +155,19 @@ segment_process/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/build
 .PHONY : segment_process/fast
 
+#=============================================================================
+# Target rules for targets named feature_process
+
+# Build rule for target.
+feature_process: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 feature_process
+.PHONY : feature_process
+
+# fast build rule for target.
+feature_process/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/build
+.PHONY : feature_process/fast
+
 src/clean_process.o: src/clean_process.cpp.o
 .PHONY : src/clean_process.o
 
@@ -179,6 +192,54 @@ src/clean_process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/clean_process.cpp.s
 .PHONY : src/clean_process.cpp.s
 
+src/feature_extraction.o: src/feature_extraction.cpp.o
+.PHONY : src/feature_extraction.o
+
+# target to build an object file
+src/feature_extraction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.o
+.PHONY : src/feature_extraction.cpp.o
+
+src/feature_extraction.i: src/feature_extraction.cpp.i
+.PHONY : src/feature_extraction.i
+
+# target to preprocess a source file
+src/feature_extraction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.i
+.PHONY : src/feature_extraction.cpp.i
+
+src/feature_extraction.s: src/feature_extraction.cpp.s
+.PHONY : src/feature_extraction.s
+
+# target to generate assembly for a file
+src/feature_extraction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.s
+.PHONY : src/feature_extraction.cpp.s
+
+src/feature_process.o: src/feature_process.cpp.o
+.PHONY : src/feature_process.o
+
+# target to build an object file
+src/feature_process.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_process.cpp.o
+.PHONY : src/feature_process.cpp.o
+
+src/feature_process.i: src/feature_process.cpp.i
+.PHONY : src/feature_process.i
+
+# target to preprocess a source file
+src/feature_process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_process.cpp.i
+.PHONY : src/feature_process.cpp.i
+
+src/feature_process.s: src/feature_process.cpp.s
+.PHONY : src/feature_process.s
+
+# target to generate assembly for a file
+src/feature_process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_process.cpp.s
+.PHONY : src/feature_process.cpp.s
+
 src/morphological_filtering.o: src/morphological_filtering.cpp.o
 .PHONY : src/morphological_filtering.o
 
@@ -186,6 +247,7 @@ src/morphological_filtering.o: src/morphological_filtering.cpp.o
 src/morphological_filtering.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.o
 .PHONY : src/morphological_filtering.cpp.o
 
 src/morphological_filtering.i: src/morphological_filtering.cpp.i
@@ -195,6 +257,7 @@ src/morphological_filtering.i: src/morphological_filtering.cpp.i
 src/morphological_filtering.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.i
 .PHONY : src/morphological_filtering.cpp.i
 
 src/morphological_filtering.s: src/morphological_filtering.cpp.s
@@ -204,6 +267,7 @@ src/morphological_filtering.s: src/morphological_filtering.cpp.s
 src/morphological_filtering.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.s
 .PHONY : src/morphological_filtering.cpp.s
 
 src/segment.o: src/segment.cpp.o
@@ -212,6 +276,7 @@ src/segment.o: src/segment.cpp.o
 # target to build an object file
 src/segment.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.o
 .PHONY : src/segment.cpp.o
 
 src/segment.i: src/segment.cpp.i
@@ -220,6 +285,7 @@ src/segment.i: src/segment.cpp.i
 # target to preprocess a source file
 src/segment.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.i
 .PHONY : src/segment.cpp.i
 
 src/segment.s: src/segment.cpp.s
@@ -228,6 +294,7 @@ src/segment.s: src/segment.cpp.s
 # target to generate assembly for a file
 src/segment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.s
 .PHONY : src/segment.cpp.s
 
 src/segment_process.o: src/segment_process.cpp.o
@@ -286,6 +353,7 @@ src/thresholding.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/src/thresholding.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.o
 .PHONY : src/thresholding.cpp.o
 
 src/thresholding.i: src/thresholding.cpp.i
@@ -296,6 +364,7 @@ src/thresholding.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/src/thresholding.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.i
 .PHONY : src/thresholding.cpp.i
 
 src/thresholding.s: src/thresholding.cpp.s
@@ -306,6 +375,7 @@ src/thresholding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/src/thresholding.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.s
 .PHONY : src/thresholding.cpp.s
 
 # Help Target
@@ -317,11 +387,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... clean_process"
+	@echo "... feature_process"
 	@echo "... segment_process"
 	@echo "... threshold_process"
 	@echo "... src/clean_process.o"
 	@echo "... src/clean_process.i"
 	@echo "... src/clean_process.s"
+	@echo "... src/feature_extraction.o"
+	@echo "... src/feature_extraction.i"
+	@echo "... src/feature_extraction.s"
+	@echo "... src/feature_process.o"
+	@echo "... src/feature_process.i"
+	@echo "... src/feature_process.s"
 	@echo "... src/morphological_filtering.o"
 	@echo "... src/morphological_filtering.i"
 	@echo "... src/morphological_filtering.s"

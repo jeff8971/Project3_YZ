@@ -168,6 +168,56 @@ feature_process/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/build
 .PHONY : feature_process/fast
 
+#=============================================================================
+# Target rules for targets named save_feature
+
+# Build rule for target.
+save_feature: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 save_feature
+.PHONY : save_feature
+
+# fast build rule for target.
+save_feature/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/build
+.PHONY : save_feature/fast
+
+#=============================================================================
+# Target rules for targets named classify
+
+# Build rule for target.
+classify: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classify
+.PHONY : classify
+
+# fast build rule for target.
+classify/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/build
+.PHONY : classify/fast
+
+src/classify.o: src/classify.cpp.o
+.PHONY : src/classify.o
+
+# target to build an object file
+src/classify.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/classify.cpp.o
+.PHONY : src/classify.cpp.o
+
+src/classify.i: src/classify.cpp.i
+.PHONY : src/classify.i
+
+# target to preprocess a source file
+src/classify.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/classify.cpp.i
+.PHONY : src/classify.cpp.i
+
+src/classify.s: src/classify.cpp.s
+.PHONY : src/classify.s
+
+# target to generate assembly for a file
+src/classify.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/classify.cpp.s
+.PHONY : src/classify.cpp.s
+
 src/clean_process.o: src/clean_process.cpp.o
 .PHONY : src/clean_process.o
 
@@ -198,6 +248,8 @@ src/feature_extraction.o: src/feature_extraction.cpp.o
 # target to build an object file
 src/feature_extraction.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/feature_extraction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/feature_extraction.cpp.o
 .PHONY : src/feature_extraction.cpp.o
 
 src/feature_extraction.i: src/feature_extraction.cpp.i
@@ -206,6 +258,8 @@ src/feature_extraction.i: src/feature_extraction.cpp.i
 # target to preprocess a source file
 src/feature_extraction.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/feature_extraction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/feature_extraction.cpp.i
 .PHONY : src/feature_extraction.cpp.i
 
 src/feature_extraction.s: src/feature_extraction.cpp.s
@@ -214,6 +268,8 @@ src/feature_extraction.s: src/feature_extraction.cpp.s
 # target to generate assembly for a file
 src/feature_extraction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/feature_extraction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/feature_extraction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/feature_extraction.cpp.s
 .PHONY : src/feature_extraction.cpp.s
 
 src/feature_process.o: src/feature_process.cpp.o
@@ -248,6 +304,8 @@ src/morphological_filtering.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/morphological_filtering.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/morphological_filtering.cpp.o
 .PHONY : src/morphological_filtering.cpp.o
 
 src/morphological_filtering.i: src/morphological_filtering.cpp.i
@@ -258,6 +316,8 @@ src/morphological_filtering.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/morphological_filtering.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/morphological_filtering.cpp.i
 .PHONY : src/morphological_filtering.cpp.i
 
 src/morphological_filtering.s: src/morphological_filtering.cpp.s
@@ -268,7 +328,33 @@ src/morphological_filtering.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/morphological_filtering.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/morphological_filtering.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/morphological_filtering.cpp.s
 .PHONY : src/morphological_filtering.cpp.s
+
+src/save_feature.o: src/save_feature.cpp.o
+.PHONY : src/save_feature.o
+
+# target to build an object file
+src/save_feature.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/save_feature.cpp.o
+.PHONY : src/save_feature.cpp.o
+
+src/save_feature.i: src/save_feature.cpp.i
+.PHONY : src/save_feature.i
+
+# target to preprocess a source file
+src/save_feature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/save_feature.cpp.i
+.PHONY : src/save_feature.cpp.i
+
+src/save_feature.s: src/save_feature.cpp.s
+.PHONY : src/save_feature.s
+
+# target to generate assembly for a file
+src/save_feature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/save_feature.cpp.s
+.PHONY : src/save_feature.cpp.s
 
 src/segment.o: src/segment.cpp.o
 .PHONY : src/segment.o
@@ -277,6 +363,8 @@ src/segment.o: src/segment.cpp.o
 src/segment.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/segment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/segment.cpp.o
 .PHONY : src/segment.cpp.o
 
 src/segment.i: src/segment.cpp.i
@@ -286,6 +374,8 @@ src/segment.i: src/segment.cpp.i
 src/segment.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/segment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/segment.cpp.i
 .PHONY : src/segment.cpp.i
 
 src/segment.s: src/segment.cpp.s
@@ -295,6 +385,8 @@ src/segment.s: src/segment.cpp.s
 src/segment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/segment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/segment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/segment.cpp.s
 .PHONY : src/segment.cpp.s
 
 src/segment_process.o: src/segment_process.cpp.o
@@ -354,6 +446,8 @@ src/thresholding.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/thresholding.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/thresholding.cpp.o
 .PHONY : src/thresholding.cpp.o
 
 src/thresholding.i: src/thresholding.cpp.i
@@ -365,6 +459,8 @@ src/thresholding.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/thresholding.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/thresholding.cpp.i
 .PHONY : src/thresholding.cpp.i
 
 src/thresholding.s: src/thresholding.cpp.s
@@ -376,6 +472,8 @@ src/thresholding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/src/thresholding.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/thresholding.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/src/thresholding.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/src/thresholding.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/src/thresholding.cpp.s
 .PHONY : src/thresholding.cpp.s
 
 # Help Target
@@ -386,10 +484,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... classify"
 	@echo "... clean_process"
 	@echo "... feature_process"
+	@echo "... save_feature"
 	@echo "... segment_process"
 	@echo "... threshold_process"
+	@echo "... src/classify.o"
+	@echo "... src/classify.i"
+	@echo "... src/classify.s"
 	@echo "... src/clean_process.o"
 	@echo "... src/clean_process.i"
 	@echo "... src/clean_process.s"
@@ -402,6 +505,9 @@ help:
 	@echo "... src/morphological_filtering.o"
 	@echo "... src/morphological_filtering.i"
 	@echo "... src/morphological_filtering.s"
+	@echo "... src/save_feature.o"
+	@echo "... src/save_feature.i"
+	@echo "... src/save_feature.s"
 	@echo "... src/segment.o"
 	@echo "... src/segment.i"
 	@echo "... src/segment.s"

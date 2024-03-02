@@ -44,27 +44,22 @@ int main(int argc, char** argv) {
         cv::Mat labels = segmentObjects(cleanedFrame, segmentFrame, 500, prevRegions); // Adjust minRegionSize as needed
 
         // Inside the loop after computing features
-for (const auto& reg : prevRegions) {
-    RegionInfo info = computeFeatures(segmentFrame, labels, reg.first, reg.second.centroid, reg.second.color);
-
-    // Display the additional features on the frame
-    std::string infoText = "Fill: " + std::to_string(info.percentFilled) + 
-                           ", Aspect: " + std::to_string(info.bboxAspectRatio);
-    cv::putText(segmentFrame, infoText, cv::Point(info.centroid.x + 10, info.centroid.y + 10),
-                cv::FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255), 1);
-}
-
-
-
-
+        for (const auto& reg : prevRegions) {
+            RegionInfo info = computeFeatures(segmentFrame, labels, reg.first, reg.second.centroid, reg.second.color);
+            //
+            std::string idText = "ID: " + std::to_string(reg.first);
+            cv::putText(segmentFrame, idText, cv::Point(info.centroid.x - 10, info.centroid.y - 10),
+                        cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
+            // Display the additional features on the frame
+            std::string infoText = "Fill: " + std::to_string(info.percentFilled) + 
+                                ", Aspect: " + std::to_string(info.bboxAspectRatio);
+            cv::putText(segmentFrame, infoText, cv::Point(info.centroid.x + 10, info.centroid.y + 10),
+                        cv::FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255), 1);
+        }
 
         // Display the original and processed video frames
         cv::imshow("Original Video", rawFrame);
         cv::imshow("Segmented Video", segmentFrame);
-
-
-
-
 
         char key = cv::waitKey(100);
         if (key == 'q') {
@@ -88,7 +83,7 @@ for (const auto& reg : prevRegions) {
             }
 
             frameCounter++; // Increment the counter to ensure filenames are unique
-        }
+        } 
     }
 
     cv::destroyAllWindows();

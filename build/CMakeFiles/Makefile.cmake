@@ -52,4 +52,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/clean_process.dir/DependInfo.cmake"
   "CMakeFiles/segment_process.dir/DependInfo.cmake"
   "CMakeFiles/feature_process.dir/DependInfo.cmake"
+  "CMakeFiles/save_feature.dir/DependInfo.cmake"
+  "CMakeFiles/classify.dir/DependInfo.cmake"
   )

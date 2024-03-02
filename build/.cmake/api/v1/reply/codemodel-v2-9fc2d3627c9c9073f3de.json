@@ -18,7 +18,9 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -36,12 +38,21 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "classify::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-classify-Debug-565cb3c4b9c4aea0d3ce.json",
+					"name" : "classify",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "clean_process::@6890427a1f51a3e7e1df",
@@ -54,6 +65,13 @@
 					"id" : "feature_process::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-feature_process-Debug-eb5188157fcc4da13da4.json",
 					"name" : "feature_process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "save_feature::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-save_feature-Debug-41327a261308e0eb144e.json",
+					"name" : "save_feature",
 					"projectIndex" : 0
 				},
 				{

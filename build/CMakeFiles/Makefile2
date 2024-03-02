@@ -67,6 +67,8 @@ all: CMakeFiles/threshold_process.dir/all
 all: CMakeFiles/clean_process.dir/all
 all: CMakeFiles/segment_process.dir/all
 all: CMakeFiles/feature_process.dir/all
+all: CMakeFiles/save_feature.dir/all
+all: CMakeFiles/classify.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +80,8 @@ clean: CMakeFiles/threshold_process.dir/clean
 clean: CMakeFiles/clean_process.dir/clean
 clean: CMakeFiles/segment_process.dir/clean
 clean: CMakeFiles/feature_process.dir/clean
+clean: CMakeFiles/save_feature.dir/clean
+clean: CMakeFiles/classify.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -87,7 +91,7 @@ clean: CMakeFiles/feature_process.dir/clean
 CMakeFiles/threshold_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threshold_process.dir/build.make CMakeFiles/threshold_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=16,17,18 "Built target threshold_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=28,29,30 "Built target threshold_process"
 .PHONY : CMakeFiles/threshold_process.dir/all
 
 # Build rule for subdir invocation for target.
@@ -113,7 +117,7 @@ CMakeFiles/threshold_process.dir/clean:
 CMakeFiles/clean_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_process.dir/build.make CMakeFiles/clean_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=1,2,3,4 "Built target clean_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=7,8,9,10 "Built target clean_process"
 .PHONY : CMakeFiles/clean_process.dir/all
 
 # Build rule for subdir invocation for target.
@@ -139,7 +143,7 @@ CMakeFiles/clean_process.dir/clean:
 CMakeFiles/segment_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target segment_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=23,24,25,26,27 "Built target segment_process"
 .PHONY : CMakeFiles/segment_process.dir/all
 
 # Build rule for subdir invocation for target.
@@ -165,7 +169,7 @@ CMakeFiles/segment_process.dir/clean:
 CMakeFiles/feature_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Built target feature_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=11,12,13,14,15,16 "Built target feature_process"
 .PHONY : CMakeFiles/feature_process.dir/all
 
 # Build rule for subdir invocation for target.
@@ -183,6 +187,58 @@ feature_process: CMakeFiles/feature_process.dir/rule
 CMakeFiles/feature_process.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_process.dir/build.make CMakeFiles/feature_process.dir/clean
 .PHONY : CMakeFiles/feature_process.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/save_feature.dir
+
+# All Build rule for target.
+CMakeFiles/save_feature.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=17,18,19,20,21,22 "Built target save_feature"
+.PHONY : CMakeFiles/save_feature.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/save_feature.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/save_feature.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 0
+.PHONY : CMakeFiles/save_feature.dir/rule
+
+# Convenience name for target.
+save_feature: CMakeFiles/save_feature.dir/rule
+.PHONY : save_feature
+
+# clean rule for target.
+CMakeFiles/save_feature.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_feature.dir/build.make CMakeFiles/save_feature.dir/clean
+.PHONY : CMakeFiles/save_feature.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/classify.dir
+
+# All Build rule for target.
+CMakeFiles/classify.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target classify"
+.PHONY : CMakeFiles/classify.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/classify.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/classify.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles 0
+.PHONY : CMakeFiles/classify.dir/rule
+
+# Convenience name for target.
+classify: CMakeFiles/classify.dir/rule
+.PHONY : classify
+
+# clean rule for target.
+CMakeFiles/classify.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classify.dir/build.make CMakeFiles/classify.dir/clean
+.PHONY : CMakeFiles/classify.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

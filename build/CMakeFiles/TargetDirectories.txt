@@ -2,5 +2,7 @@
 /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/clean_process.dir
 /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/segment_process.dir
 /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/feature_process.dir
+/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/save_feature.dir
+/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/classify.dir
 /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/edit_cache.dir
 /Users/jeff/Desktop/Project3_YZ/build/CMakeFiles/rebuild_cache.dir

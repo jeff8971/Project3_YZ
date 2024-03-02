@@ -48,5 +48,6 @@ RegionInfo computeFeatures(cv::Mat &src, const cv::Mat &labels, int label, const
     cv::Point2f endpoint(centroid.x + cos(angle) * 100, centroid.y - sin(angle) * 100); // Adjusted for correct orientation
     cv::line(src, centroid, endpoint, cv::Scalar(color), 2);
 
+
     return info;
 }

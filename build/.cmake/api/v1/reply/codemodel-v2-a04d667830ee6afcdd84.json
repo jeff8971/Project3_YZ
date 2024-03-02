@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project3_YZ",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "clean_process::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clean_process-Debug-c1de5192c37dc615b5a7.json",
+					"name" : "clean_process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "segment_process::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-segment_process-Debug-fdf8ce3a834e69700e1a.json",
+					"name" : "segment_process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "threshold_process::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-threshold_process-Debug-b2be19f1e6b9dc6aa8fa.json",
+					"name" : "threshold_process",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/jeff/Desktop/Project3_YZ/build",
+		"source" : "/Users/jeff/Desktop/Project3_YZ"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

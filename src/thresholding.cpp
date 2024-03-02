@@ -88,7 +88,6 @@ void applyDynamicThreshold(const cv::Mat& src, cv::Mat& dst) {
 void simpleThreshold(const cv::Mat& src, cv::Mat& dst, int thresholdValue) {
     if (!isValidImage(src)) return; // Error handling
 
-    // Convert the source image to grayscale if it is a BGR image
     cv::Mat grayscale;
     if (src.channels() == 3) {
         cv::cvtColor(src, grayscale, cv::COLOR_BGR2GRAY);
@@ -97,5 +96,6 @@ void simpleThreshold(const cv::Mat& src, cv::Mat& dst, int thresholdValue) {
     }
     
     // Apply the threshold to the grayscale image to obtain a binary image
-    cv::threshold(grayscale, dst, thresholdValue, 255, cv::THRESH_BINARY);
+    // Inverted binary thresholding
+    cv::threshold(grayscale, dst, thresholdValue, 255, cv::THRESH_BINARY_INV);
 }

@@ -36,7 +36,7 @@ target_include_directories(clean_process PRIVATE ${OpenCV_INCLUDE_DIRS})
 
 # Task 3: Segment the image into regions
 # Add the executable that uses clean_process.cpp and morphological_filtering.cpp
-add_executable(segment_process ${CMAKE_SOURCE_DIR} ./src/segment_process.cpp ./src/segmentation.cpp ./src/thresholding.cpp  ./src/morphological_filtering.cpp)
+add_executable(segment_process ${CMAKE_SOURCE_DIR} ./src/segment_process.cpp ./src/segment.cpp ./src/thresholding.cpp  ./src/morphological_filtering.cpp)
 # Link with OpenCV libraries
 target_link_libraries(segment_process PRIVATE ${OpenCV_LIBS})
 # Ensure the OpenCV include directories are available to the target

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4
 
-CXX_FLAGS = -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+CXX_FLAGS = -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
 

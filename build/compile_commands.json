@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/threshold_process.cpp",
+  "output": "CMakeFiles/threshold_process.dir/src/threshold_process.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/threshold_process.dir/src/thresholding.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "output": "CMakeFiles/threshold_process.dir/src/thresholding.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/clean_process.dir/src/clean_process.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/clean_process.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/clean_process.cpp",
+  "output": "CMakeFiles/clean_process.dir/src/clean_process.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/clean_process.dir/src/thresholding.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "output": "CMakeFiles/clean_process.dir/src/thresholding.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp",
+  "output": "CMakeFiles/clean_process.dir/src/morphological_filtering.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/segment_process.dir/src/segment_process.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/segment_process.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/segment_process.cpp",
+  "output": "CMakeFiles/segment_process.dir/src/segment_process.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/segment_process.dir/src/segment.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/segment.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/segment.cpp",
+  "output": "CMakeFiles/segment_process.dir/src/segment.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/segment_process.dir/src/thresholding.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp",
+  "output": "CMakeFiles/segment_process.dir/src/thresholding.cpp.o"
+},
+{
+  "directory": "/Users/jeff/Desktop/Project3_YZ/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/jeff/Desktop/Project3_YZ/include -isystem /usr/local/Cellar/opencv/4.9.0_3/include/opencv4 -g -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp",
+  "file": "/Users/jeff/Desktop/Project3_YZ/src/morphological_filtering.cpp",
+  "output": "CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o"
+}
+]

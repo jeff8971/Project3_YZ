@@ -83,19 +83,19 @@ CMakeFiles/segment_process.dir/src/segment_process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/segment_process.dir/src/segment_process.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ/src/segment_process.cpp -o CMakeFiles/segment_process.dir/src/segment_process.cpp.s
 
-CMakeFiles/segment_process.dir/src/segmentation.cpp.o: CMakeFiles/segment_process.dir/flags.make
-CMakeFiles/segment_process.dir/src/segmentation.cpp.o: /Users/jeff/Desktop/Project3_YZ/src/segmentation.cpp
-CMakeFiles/segment_process.dir/src/segmentation.cpp.o: CMakeFiles/segment_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/segment_process.dir/src/segmentation.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/segment_process.dir/src/segmentation.cpp.o -MF CMakeFiles/segment_process.dir/src/segmentation.cpp.o.d -o CMakeFiles/segment_process.dir/src/segmentation.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/segmentation.cpp
+CMakeFiles/segment_process.dir/src/segment.cpp.o: CMakeFiles/segment_process.dir/flags.make
+CMakeFiles/segment_process.dir/src/segment.cpp.o: /Users/jeff/Desktop/Project3_YZ/src/segment.cpp
+CMakeFiles/segment_process.dir/src/segment.cpp.o: CMakeFiles/segment_process.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jeff/Desktop/Project3_YZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/segment_process.dir/src/segment.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/segment_process.dir/src/segment.cpp.o -MF CMakeFiles/segment_process.dir/src/segment.cpp.o.d -o CMakeFiles/segment_process.dir/src/segment.cpp.o -c /Users/jeff/Desktop/Project3_YZ/src/segment.cpp
 
-CMakeFiles/segment_process.dir/src/segmentation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/segment_process.dir/src/segmentation.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ/src/segmentation.cpp > CMakeFiles/segment_process.dir/src/segmentation.cpp.i
+CMakeFiles/segment_process.dir/src/segment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/segment_process.dir/src/segment.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeff/Desktop/Project3_YZ/src/segment.cpp > CMakeFiles/segment_process.dir/src/segment.cpp.i
 
-CMakeFiles/segment_process.dir/src/segmentation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/segment_process.dir/src/segmentation.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ/src/segmentation.cpp -o CMakeFiles/segment_process.dir/src/segmentation.cpp.s
+CMakeFiles/segment_process.dir/src/segment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/segment_process.dir/src/segment.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeff/Desktop/Project3_YZ/src/segment.cpp -o CMakeFiles/segment_process.dir/src/segment.cpp.s
 
 CMakeFiles/segment_process.dir/src/thresholding.cpp.o: CMakeFiles/segment_process.dir/flags.make
 CMakeFiles/segment_process.dir/src/thresholding.cpp.o: /Users/jeff/Desktop/Project3_YZ/src/thresholding.cpp
@@ -128,7 +128,7 @@ CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.s: cmake_force
 # Object files for target segment_process
 segment_process_OBJECTS = \
 "CMakeFiles/segment_process.dir/src/segment_process.cpp.o" \
-"CMakeFiles/segment_process.dir/src/segmentation.cpp.o" \
+"CMakeFiles/segment_process.dir/src/segment.cpp.o" \
 "CMakeFiles/segment_process.dir/src/thresholding.cpp.o" \
 "CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o"
 
@@ -136,7 +136,7 @@ segment_process_OBJECTS = \
 segment_process_EXTERNAL_OBJECTS =
 
 /Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/src/segment_process.cpp.o
-/Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/src/segmentation.cpp.o
+/Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/src/segment.cpp.o
 /Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/src/thresholding.cpp.o
 /Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.o
 /Users/jeff/Desktop/Project3_YZ/bin/segment_process: CMakeFiles/segment_process.dir/build.make

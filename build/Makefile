@@ -206,6 +206,30 @@ src/morphological_filtering.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/morphological_filtering.cpp.s
 .PHONY : src/morphological_filtering.cpp.s
 
+src/segment.o: src/segment.cpp.o
+.PHONY : src/segment.o
+
+# target to build an object file
+src/segment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.o
+.PHONY : src/segment.cpp.o
+
+src/segment.i: src/segment.cpp.i
+.PHONY : src/segment.i
+
+# target to preprocess a source file
+src/segment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.i
+.PHONY : src/segment.cpp.i
+
+src/segment.s: src/segment.cpp.s
+.PHONY : src/segment.s
+
+# target to generate assembly for a file
+src/segment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment.cpp.s
+.PHONY : src/segment.cpp.s
+
 src/segment_process.o: src/segment_process.cpp.o
 .PHONY : src/segment_process.o
 
@@ -229,30 +253,6 @@ src/segment_process.s: src/segment_process.cpp.s
 src/segment_process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segment_process.cpp.s
 .PHONY : src/segment_process.cpp.s
-
-src/segmentation.o: src/segmentation.cpp.o
-.PHONY : src/segmentation.o
-
-# target to build an object file
-src/segmentation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segmentation.cpp.o
-.PHONY : src/segmentation.cpp.o
-
-src/segmentation.i: src/segmentation.cpp.i
-.PHONY : src/segmentation.i
-
-# target to preprocess a source file
-src/segmentation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segmentation.cpp.i
-.PHONY : src/segmentation.cpp.i
-
-src/segmentation.s: src/segmentation.cpp.s
-.PHONY : src/segmentation.s
-
-# target to generate assembly for a file
-src/segmentation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_process.dir/build.make CMakeFiles/segment_process.dir/src/segmentation.cpp.s
-.PHONY : src/segmentation.cpp.s
 
 src/threshold_process.o: src/threshold_process.cpp.o
 .PHONY : src/threshold_process.o
@@ -325,12 +325,12 @@ help:
 	@echo "... src/morphological_filtering.o"
 	@echo "... src/morphological_filtering.i"
 	@echo "... src/morphological_filtering.s"
+	@echo "... src/segment.o"
+	@echo "... src/segment.i"
+	@echo "... src/segment.s"
 	@echo "... src/segment_process.o"
 	@echo "... src/segment_process.i"
 	@echo "... src/segment_process.s"
-	@echo "... src/segmentation.o"
-	@echo "... src/segmentation.i"
-	@echo "... src/segmentation.s"
 	@echo "... src/threshold_process.o"
 	@echo "... src/threshold_process.i"
 	@echo "... src/threshold_process.s"

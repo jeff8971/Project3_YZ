@@ -23,7 +23,7 @@ void customErode(const cv::Mat& inputImage, cv::Mat& outputImage, const cv::Mat&
                         }
                     }
                 }
-                outputImage.at<uchar>(i, j) = shouldErode ? 0 : 255; // Adjusted to make foreground dark and background light
+                outputImage.at<uchar>(i, j) = shouldErode ? 255 : 0;
             }
         }
     }
@@ -52,20 +52,20 @@ void customDilate(const cv::Mat& inputImage, cv::Mat& outputImage, const cv::Mat
                         }
                     }
                 }
-                outputImage.at<uchar>(i, j) = shouldDilate ? 255 : 0; // This ensures dilation first
+                outputImage.at<uchar>(i, j) = shouldDilate ? 255 : 0;
             }
         }
     }
 }
 
-// Adjusted function to clean the thresholded image with dilation first and then erosion
-void cleanThresholdedImage(const cv::Mat& src, cv::Mat& dst, int dilationIterations = 2, int erosionIterations = 2) {
+// Adjusted function to clean the thresholded image
+void cleanThresholdedImage(const cv::Mat& src, cv::Mat& dst, int erosionIterations = 2, int dilationIterations = 2) {
     // Define a larger kernel for more obvious effects
     cv::Mat morphKernel = cv::Mat::ones(5, 5, CV_8U); // 5x5 kernel for more pronounced effect
-
     cv::Mat tempImage;
-    // Dilate first for the desired effect
-    customDilate(src, tempImage, morphKernel, dilationIterations);
-    // Then apply erosion
-    customErode(tempImage, dst, morphKernel, erosionIterations);
+    
+    customErode(src, tempImage, morphKernel, erosionIterations); // Erode multiple times
+    customDilate(tempImage, dst, morphKernel, dilationIterations); // Dilate multiple times
+
+
 }

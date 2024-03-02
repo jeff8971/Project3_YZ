@@ -55,10 +55,17 @@ int main(int argc, char** argv) {
             break;  // Exit the loop if 'q' is pressed
         } else if (key == 's') {
             // Save the displayed images when 's' is pressed
+            std::string rawFilename = "rawSegmentFrame_" + std::to_string(frameCounter) + ".jpg";
             std::string segmentFilename = "segmentFrame_" + std::to_string(frameCounter) + ".jpg";
-
+            
             // Save images
-            if (!cv::imwrite(segmentFilename, rawFrame)) {
+            if (!cv::imwrite(rawFilename, rawFrame)) {
+                std::cerr << "Failed to save " << rawFilename << std::endl;
+            } else {
+                std::cout << "Saved " << rawFilename << std::endl;
+            }
+
+            if (!cv::imwrite(segmentFilename, segmentFrame)) {
                 std::cerr << "Failed to save " << segmentFilename << std::endl;
             } else {
                 std::cout << "Saved " << segmentFilename << std::endl;

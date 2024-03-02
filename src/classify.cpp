@@ -9,20 +9,16 @@
 #include "feature_extraction.h"
 
 
-int getstring(FILE *fp, char os[])
-{
+int getstring(FILE *fp, char os[]){
   int p = 0;
   int eol = 0;
 
-  for (;;)
-  {
+  for (;;){
     char ch = fgetc(fp);
-    if (ch == ',')
-    {
+    if (ch == ','){
       break;
     }
-    else if (ch == '\n' || ch == EOF)
-    {
+    else if (ch == '\n' || ch == EOF){
       eol = 1;
       break;
     }
@@ -36,21 +32,17 @@ int getstring(FILE *fp, char os[])
   return (eol); // return true if eol
 }
 
-int getint(FILE *fp, int *v)
-{
+int getint(FILE *fp, int *v){
   char s[256];
   int p = 0;
   int eol = 0;
 
-  for (;;)
-  {
+  for (;;){
     char ch = fgetc(fp);
-    if (ch == ',')
-    {
+    if (ch == ','){
       break;
     }
-    else if (ch == '\n' || ch == EOF)
-    {
+    else if (ch == '\n' || ch == EOF){
       eol = 1;
       break;
     }
@@ -71,21 +63,17 @@ int getint(FILE *fp, int *v)
 
   The function returns true if it reaches the end of a line or the file
  */
-int getfloat(FILE *fp, float *v)
-{
+int getfloat(FILE *fp, float *v){
   char s[256];
   int p = 0;
   int eol = 0;
 
-  for (;;)
-  {
+  for (;;){
     char ch = fgetc(fp);
-    if (ch == ',')
-    {
+    if (ch == ','){
       break;
     }
-    else if (ch == '\n' || ch == EOF)
-    {
+    else if (ch == '\n' || ch == EOF){
       eol = 1;
       break;
     }
@@ -99,8 +87,7 @@ int getfloat(FILE *fp, float *v)
   return (eol); // return true if eol
 }
 
-int read_image_data_csv(char *filename, std::vector<char *> &labels, std::vector<std::vector<float>> &data, int echo_file)
-{
+int read_image_data_csv(char *filename, std::vector<char *> &labels, std::vector<std::vector<float>> &data, int echo_file){
   FILE *fp;
   float fval;
   char img_file[256];
@@ -113,19 +100,16 @@ int read_image_data_csv(char *filename, std::vector<char *> &labels, std::vector
   }
 
   printf("Reading %s\n", filename);
-  for (;;)
-  {
+  for (;;){
     std::vector<float> dvec;
 
     // read the filename
-    if (getstring(fp, img_file))
-    {
+    if (getstring(fp, img_file)){
       break;
     }
 
     // read the whole feature file into memory
-    for (;;)
-    {
+    for (;;){
       // get next feature
       float eol = getfloat(fp, &fval);
       dvec.push_back(fval);
@@ -142,12 +126,9 @@ int read_image_data_csv(char *filename, std::vector<char *> &labels, std::vector
   fclose(fp);
   printf("Finished reading CSV file\n");
 
-  if (echo_file)
-  {
-    for (int i = 0; i < data.size(); i++)
-    {
-      for (int j = 0; j < data[i].size(); j++)
-      {
+  if (echo_file){
+    for (int i = 0; i < data.size(); i++) {
+      for (int j = 0; j < data[i].size(); j++){
         printf("%.4f  ", data[i][j]);
       }
       printf("\n");
@@ -259,13 +240,13 @@ int main(int argc, char** argv) {
     }
 
     std::string csvFileName = "/Users/jeff/Desktop/Project3_YZ/bin/objectDB.csv"; 
-    // 获取视频流的宽度和高度，用于设置VideoWriter
+    // set up the video recorder
     int width = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_WIDTH));
     int height = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_HEIGHT));
 
-    // 准备VideoWriter对象，用于写入视频文件
+    // prepare the video writer
     cv::VideoWriter writer;
-    bool isRecording = false; // 记录是否正在录制的标志
+    bool isRecording = false;
 
     int frameCounter = 0; // Counter to name the saved images uniquely
 
@@ -280,12 +261,12 @@ int main(int argc, char** argv) {
         cap >> rawFrame;
         if (rawFrame.empty()) break;
 
-        // 应用阈值化、清理图像和对象分割...
+        // process the frame
         applyDynamicThreshold(rawFrame, thresholdFrame);
         cleanThresholdedImage(thresholdFrame, cleanedFrame);
         cv::Mat labelsMat = segmentObjects(cleanedFrame, segmentFrame, 500, prevRegions);
 
-        // 处理每个区域...
+        // process the regions
         for (const auto& reg : prevRegions) {
             RegionInfo info = computeFeatures(segmentFrame, labelsMat, reg.first, reg.second.centroid, reg.second.color);
             std::vector<float> featureVector {info.percentFilled, info.bboxAspectRatio};
@@ -297,13 +278,13 @@ int main(int argc, char** argv) {
             std::sort(distances.begin(), distances.end());
             std::string objectLabel = distances.front().second; // 最相似的对象标签
 
-            // 显示区域ID和对象标签
+            // show the id and label of the object
             std::string idText = "ID: " + std::to_string(reg.first) + ", Label: " + objectLabel;
             cv::putText(segmentFrame, idText, cv::Point(info.centroid.x - 10, info.centroid.y - 10),
                         cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
         }
 
-        // 显示视频帧...
+        // show the video stream
         cv::imshow("Original Video", rawFrame);
         cv::imshow("Segmented Video", segmentFrame);
 
@@ -328,7 +309,7 @@ int main(int argc, char** argv) {
 
             frameCounter++; // Increment the counter to ensure filenames are unique
         } else if (key == 'r' && !isRecording) {
-            // 开始录制视频
+            // start recording
             writer.open("recordedVideo.avi", cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), 10, cv::Size(width, height));
             if (!writer.isOpened()) {
                 std::cerr << "Could not open the output video file for write\n";
@@ -336,15 +317,15 @@ int main(int argc, char** argv) {
             }
             isRecording = true;
         } else if (key == 'e' && isRecording) {
-            // 结束录制视频
+            // end recording
             writer.release();
             isRecording = false;
         } else if (key == 'q') {
-            break;  // 退出循环
+            break;  
         }
 
         if (isRecording) {
-            writer.write(segmentFrame); // 将当前帧写入视频文件
+            writer.write(segmentFrame); 
         }
     }
 

@@ -1,4 +1,13 @@
-#include <opencv2/opencv.hpp>
+/**
+ * @file morphological_filtering.cpp
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief using the morphological filtering to clean the thresholded image, Dilate then Erosion
+ * @version 0.1
+ * @date 2024-02-17
+*/
+
+
+#include "morphological_filtering.h"
 
 // Adjusted custom erode function
 void customErode(const cv::Mat& inputImage, cv::Mat& outputImage, const cv::Mat& erosionKernel, int iterations = 1) {

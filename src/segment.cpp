@@ -1,8 +1,13 @@
+/**
+ * @file segment.cpp
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief segment objects in an image into regions based on connected components
+ * @version 0.1
+ * @date 2024-02-17
+*/
 
 
 #include "segment.h"
-
-
 
 // Function to get color for a region based on its centroid
 cv::Vec3b getColorForRegion(cv::Point2d centroid, std::map<int, RegionInfo>& prevRegions) {

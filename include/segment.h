@@ -1,23 +1,19 @@
 /**
- * Ronak Bhanushali and Ruohe Zhou
- * Spring 2024
- * @file filters.hpp
- * @brief This file contains functions for image processing and object segmentation.
- */
+ * @file segment.h
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief header file for the segment.cpp
+ * @version 0.1
+ * @date 2024-02-17
+*/
+
 
 #ifndef INCLUDE_SEGMENT_H
 #define INCLUDE_SEGMENT_H
 
-
-
-
 #include <opencv2/opencv.hpp>
 #include <stdio.h>
-#include<iostream>
+#include <iostream>
 
-/**
- * @brief Struct to store information about a segmented region.
- */
 // Structure to hold region features
 struct RegionInfo {
     cv::Point2d centroid; // Centroid of the region
@@ -27,22 +23,9 @@ struct RegionInfo {
     double huMoments[7]; // Hu moments for shape analysis
 };
 
-/**
- * @brief Segments objects in the input image and returns the segmented image.
- * @param src Input image.
- * @param dst Output segmented image.
- * @param minRegionSize Minimum size of a region to be considered an object.
- * @param prevRegions Map containing information about previously segmented regions.
- * @return Returns the segmented image.
- */
+// Function to segment objects in an image
 cv::Mat segmentObjects(cv::Mat &src, cv::Mat &dst, int minRegionSize, std::map<int, RegionInfo>& prevRegions);
-
-/**
- * @brief Retrieves the color for a segmented region based on its centroid.
- * @param centroid Centroid of the region.
- * @param prevRegions Map containing information about previously segmented regions.
- * @return Returns the color for the region.
- */
+// Function to get color for a region based on its centroid
 cv::Vec3b getColorForRegion(cv::Point2d centroid, std::map<int, RegionInfo>& prevRegions);
 
 #endif  // INCLUDE_SEGMENT_H  

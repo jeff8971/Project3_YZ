@@ -1,3 +1,11 @@
+/**
+ * @file save_feature.cpp
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief save the features based on the user input, select the id and change the label,
+ *        save the feature vector to the database
+ * @version 0.1
+ * @date 2024-02-17
+*/
 
 
 
@@ -12,7 +20,7 @@
 #include "feature_extraction.h"
 
 
-
+// Function to append feature vector to a CSV file
 int append_image_data_csv(char *csv_file_name, std::string object_name, std::vector<float> &image_data, int reset_file)
 {
   char buffer[256];
@@ -65,7 +73,7 @@ int main(int argc, char** argv) {
     int frameCounter = 0; // Counter to name the saved images uniquely
 
     std::map<int, RegionInfo> prevRegions;
-    std::string csvFileName = "objectDB.csv"; // 特征向量数据库文件名
+    std::string csvFileName = "objectDB.csv"; // Database file to save the feature vectors
 
     for (;;) {
         cv::Mat rawFrame, thresholdFrame, cleanedFrame, segmentFrame;
@@ -96,18 +104,12 @@ int main(int argc, char** argv) {
                         cv::FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255), 1);
         }
 
-
-
-
-
         // Display the original and processed video frames
         cv::imshow("Original Video", rawFrame);
         cv::imshow("Segmented Video", segmentFrame);
 
 
-
-
-
+        // user input
         char key = cv::waitKey(100);
         if (key == 'q') {
             break;  // Exit the loop if 'q' is pressed

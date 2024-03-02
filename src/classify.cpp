@@ -1,3 +1,13 @@
+/**
+ * @file classify.cpp
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief main entry for the object detection, 
+ *        classification and recognition object in the live video stream
+ * @version 0.1
+ * @date 2024-02-17
+*/
+
+
 
 #include <opencv2/opencv.hpp>
 #include <iostream>

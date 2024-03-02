@@ -1,7 +1,7 @@
 /**
- * @file clean_process.cpp
+ * @file feature_process.cpp
  * @author Yuan Zhao zhao.yuan2@northeatern.edu
- * @brief Task 2 main entry, clean the binary video
+ * @brief extract feature and show on the video
  * @version 0.1
  * @date 2024-02-17
 */

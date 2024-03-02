@@ -1,10 +1,18 @@
+/**
+ * @file feature_extraction.cpp
+ * @author Yuan Zhao zhao.yuan2@northeatern.edu
+ * @brief feature extraction methods for the object detection
+ * @version 0.1
+ * @date 2024-02-17
+*/
+
+
 #include "feature_extraction.h"
 #include <opencv2/imgproc.hpp>
 #include <vector>
 #include <iostream>
 
-
-
+// Function to get color for a region based on its centroid
 RegionInfo computeFeatures(cv::Mat &src, const cv::Mat &labels, int label, const cv::Point2d &centroid, const cv::Vec3b &color) {
     RegionInfo info;
     info.centroid = centroid;

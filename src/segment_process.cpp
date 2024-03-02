@@ -1,7 +1,7 @@
 /**
- * @file clean_process.cpp
+ * @file segment_process.cpp
  * @author Yuan Zhao zhao.yuan2@northeatern.edu
- * @brief Task 2 main entry, clean the binary video
+ * @brief Task 3 main entry
  * @version 0.1
  * @date 2024-02-17
 */
